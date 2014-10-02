@@ -10,7 +10,7 @@ function dd($info = array()) {
 /* adatbazis fuggvenyek */
 function database_connect() {
   // probaljunk meg csatlakozni az adatbazishoz
-  $conn = mysqli_connect('localhost', 'j6sppeuser', 'j6sppeuser', 'j6sppe');
+  $conn = mysqli_connect('localhost', 'user', 'password', 'j6sppe');
   if (mysqli_connect_errno()) { # ha hibat talal, akkor alljon le es irja ki hibat
     die('Failed to connect to MySQL: ' . mysqli_connect_error());
   }
